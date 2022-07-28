@@ -43,8 +43,8 @@ const BoardComponent: FC<BoardProps> = ({ board, setBoard, currentPlayer, swapPl
 
     return (
         <div>
-            <h3 style={{marginBottom: 10}}>
-                Current player: {currentPlayer?.color.toUpperCase()}
+            <h3 style={ { marginBottom: 10 } }>
+                Current player: { currentPlayer?.color.toUpperCase() }
             </h3>
             <div className="board">
                 { board.cells.map((row, index) =>
